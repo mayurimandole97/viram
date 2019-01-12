@@ -19,10 +19,15 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Shop Homepage - Start Bootstrap Template</title>
-
+<title>Viram. - ${title}</title>
+<script>
+window.menu= '${title}';
+</script>
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Readable Theme CSS -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -31,11 +36,13 @@
 
 <body>
 
+<div class="wrapper">
 	<!-- Navigation -->
 	<%@include file="./shared/navbar.jsp"%>
 
 	<!-- Page Content -->
 	<!--loading onclick home-->
+	<div class="content">
 	<c:if test="${userClickHome==true}">
 	<%@include file="home.jsp"%>
 </c:if>
@@ -50,6 +57,7 @@
 	<%@include file="contact.jsp"%>
 </c:if>
 
+</div>
 	<!-- Footer -->
 	<%@include file="./shared/footer.jsp"%>
 
@@ -57,7 +65,12 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="${js}/jquery.js"></script>
 	<script src="${js}/bootstrap.min.js"></script>
-
+	
+	
+	
+<!-- self core javascript -->
+<script src="${js}/myapp.js"></script>
+</div>
 </body>
 
 </html>

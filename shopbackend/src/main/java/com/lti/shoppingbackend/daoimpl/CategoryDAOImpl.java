@@ -20,12 +20,12 @@ public class CategoryDAOImpl implements CategoryDAO{
 			category.setImageURL("image1.jpg");
 			categories.add(category);
 			
-			Category category1=new Category();
+			category =new Category();
 			category.setId(2);
 			category.setName("lappy");
 			category.setDescription("laptop");
 				category.setImageURL("image2.jpg");
-				categories.add(category1);
+				categories.add(category);
 	}
 	@Override
 	public List<Category> list() {
