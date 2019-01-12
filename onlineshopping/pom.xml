@@ -24,7 +24,7 @@
 	<groupId>com.lti</groupId>
   <artifactId>shopbackend</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  </dependency>
+  </dependency> 
   
 	<!-- jstl -->
 	<dependency>
