@@ -1,4 +1,10 @@
- <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -10,15 +16,22 @@
 
     <title>Shop Homepage - Start Bootstrap Template</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <!--<link href="css/shop-homepage.css" rel="stylesheet">-->
+<style>
+    body {
+  padding-top: 54px;
+}
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+    </style>
 
   </head>
 
@@ -27,8 +40,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
-         <img src=" C:/Users/vshadmin/Downloads/logo1.png" >
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,20 +51,14 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-           <li class="nav-item">
-              <a class="nav-link" href="about">About</a> 
-            </li> 
             <li class="nav-item">
-              <a class="nav-link" href="seller_login">Sell</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link" href="#">Compare</a>
+              <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login">Login</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,13 +72,11 @@
 
         <div class="col-lg-3">
 
-          <h1 class="my-4"></h1>
-          </br>
-                </br>
+          <h1 class="my-4">Shop Name</h1>
           <div class="list-group">
-            <a href="Television" class="list-group-item">Television</a>
-            <a href="Laptop" class="list-group-item">Laptop</a>
-            <a href="Mobile" class="list-group-item">Mobile</a>
+            <a href="#" class="list-group-item">Category 1</a>
+            <a href="#" class="list-group-item">Category 2</a>
+            <a href="#" class="list-group-item">Category 3</a>
           </div>
 
         </div>
@@ -88,13 +92,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src=" https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="First slide">
+                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src=" https://images.unsplash.com/photo-1532510987384-6a8118ab6ab2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=708&q=80" alt="Second slide">
+                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src=" https://images.unsplash.com/photo-1534236874052-bef0ac071a50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Third slide">
+                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -220,18 +224,15 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy;Viram.</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-   <!--  <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    
-    
- 
+    <script src="asset/jquery/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+
   </body>
 
 </html>
- 

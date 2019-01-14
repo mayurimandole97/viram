@@ -47,10 +47,6 @@ window.menu= '${title}';
 	<%@include file="home.jsp"%>
 </c:if>
 
-<!--loading onclick about-->
-<c:if test="${userClickAbout==true}">
-	<%@include file="about.jsp"%>
-</c:if>
 
 <!--loading onclick contact-->
 <c:if test="${userClickContact==true}">

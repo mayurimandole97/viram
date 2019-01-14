@@ -20,7 +20,8 @@
 				</li>
 
 				<li id="ListProducts">
-				<a href="${contextRoot}/ListProducts">View products</a>
+				<a href="${contextRoot}/show/all/products">View products</a>
+				
 				</li>
 				
 <%-- <li id="list"><a href="${contextRoot}/compare">compare</a></li>--%>
